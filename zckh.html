@@ -19,70 +19,87 @@
 			.mui-bar-nav {
 				background: #0062CC;
 			}
-
-			.wrap {
+			.mui-input-row{
 				background-color: #FFFFFF;
+				height: 50px;
+			}
+			.box{
 				width: 100%;
-
+				height: 50px;
+				text-align: center;
 			}
-
-			.box {
-				padding: 15px;
+			.mui-btn{
+				background-color: #0000FF;
+				width: 90%;
+			height: 50px; 
 			}
+		
 		</style>
 	</head>
 	<body>
 		<header id="header" class="mui-bar mui-bar-nav">
-			<h1 class="mui-title" style="color: #FFFFFF;">工程案例</h1>
+			<h1 class="mui-title" style="color: #FFFFFF;">注册客户</h1>
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 		</header>
 		</br>
 		</br>
-
-		<div class="wrap">
-			<div class="box">
-				<div class="mui-card-header mui-card-media" style="height:60vw;background-image:url(./images/06.jpg)"></div>
-				</br>
-				<p>项目名称：天安门</p>
-				<p>工程地点：北京</p>
-			</div>
-			<hr />
-			<div class="box">
-				<div class="mui-card-header mui-card-media" style="height:60vw;background-image:url(./images/07.jpg)"></div>
-				</br>
-				<p>项目名称：东方明珠</p>
-				<p>工程地点：上海</p>
-			</div>
-			<hr />
-			<div class="box">
-
-				<div class="mui-card-header mui-card-media" style="height:60vw;background-image:url(./images/08.jpg)"></div>
-				</br>
-				<p>项目名称：鸟巢</p>
-				<p>工程地点：北京</p>
-			</div>
-			<hr />
-			<div class="box">
-
-				<div class="mui-card-header mui-card-media" style="height:60vw;background-image:url(./images/09.jpg)"></div>
-				</br>
-				<p>项目名称：水立方</p>
-				<p>工程地点：北京</p>
-			</div>
-			<hr />
-			<div class="box">
-
-				<div class="mui-card-header mui-card-media" style="height:60vw;background-image:url(./images/010.jpg)"></div>
-				</br>
-				<p>项目名称：黄淮学院</p>
-				<p>工程地点：驻马店</p>
-				</br>
-				</br>
-
-
-			</div>
+		<div class="mui-input-row">
+			<label>客户姓名：</label>
+			<input type="text">
+		</div>
+		<div class="mui-input-row">
+			<label>&nbsp;&nbsp;&nbsp;手机号：</label>
+			<input type="text">
+		</div>
+		<div class="mui-input-row">
+			<label>身份证号：</label>
+			<input type="text">
 		</div>
 
+
+
+		<div class="mui-input-row">
+			<label>客户类型：</label>
+			<select>
+				<option value="item-1">大众会员</option>
+				<option value="item-2">白银会员</option>
+				<option value="item-3">黄金会员</option>
+				<option value="item-4">铂金会员</option>
+				<option value="item-5">钻石会员</option>
+			</select>
+		</div>
+
+		<div class="mui-input-row ">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别：
+			&nbsp;<input name="sex" type="radio" />男&nbsp;&nbsp;&nbsp;
+			<input name="sex" type="radio" />女
+		</div>
+
+
+		<div class="mui-input-row">
+			<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email：</label>
+			<input type="text">
+		</div>
+		<div class="mui-input-row">
+			<label>联系地址：</label>
+			<input type="text">
+		</div>
+
+
+		<div class="mui-input-row mui-checkbox mui-left">
+			<label>我已经同意以下条款<a _src="">《用户使用协议》</a> </label>
+			<input name="checkbox1" value="Item 1" type="checkbox">
+		</div>
+
+
+
+		<br /><br />
+		<div class="box">
+
+
+			<button type="button" data-loading-text="注册中" class="mui-btn" style="color: #FFFFFF;">完成注册</button>
+
+		</div>
 		<nav class="mui-bar mui-bar-tab">
 			<a class="mui-tab-item " href="./index.html">
 				<div class="iconfont icon-shouye"></div>
@@ -106,6 +123,7 @@
 			</a>
 		</nav>
 	</body>
+
 	<script type="text/javascript">
 		mui(document.body).on('tap', '.mui-btn', function(e) {
 			mui(this).button('loading');

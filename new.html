@@ -141,28 +141,35 @@
 
 
 
-
-		<nav class="mui-bar mui-bar-tab">
-			<a class="mui-tab-item mui-active">
+<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="./index.html">
 				<div class="iconfont icon-shouye"></div>
 				<div class="mui-tab-label">首页</div>
 			</a>
-			<a class="mui-tab-item">
+			<a class="mui-tab-item " href="./Venture project.html">
 				<div class="iconfont icon-xiangmutixi"></div>
 				<div class="mui-tab-label">项目</div>
 			</a>
-			<a class="mui-tab-item">
+			<a class="mui-tab-item" href="./process.html">
 				<div class="iconfont icon-baoming"></div>
 				<div class="mui-tab-label">报名</div>
 			</a>
-			<a class="mui-tab-item">
+			<a class="mui-tab-item" href="./demeanor.html">
 				<div class="iconfont icon-fengcaizhanshi"></div>
 				<div class="mui-tab-label">平台</div>
 			</a>
-			<a class="mui-tab-item">
+			<a class="mui-tab-item mui-active">
 				<div class="iconfont icon-wode"></div>
 				<div class="mui-tab-label">我的</div>
 			</a>
 		</nav>
 	</body>
+	<script type="text/javascript">
+		mui(document.body).on('tap', '.mui-btn', function(e) {
+			mui(this).button('loading');
+			setTimeout(function() {
+				mui(this).button('reset');
+			}.bind(this), 2000);
+		});
+	</script>
 </html>
