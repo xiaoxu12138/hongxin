@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>滴滴</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1579257_rxws8l85cwd.css" />
+		<style>
+			.mui-input-group {
+				margin-top: 10px;
+			}
+			.mui-input-group:first-child {
+				margin-top: 20px;
+			}
+			.mui-input-group label {
+				width: 22%;
+			}
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				width: 78%;
+			}
+			
+			.mui-content-padded {
+				margin-top: 40px;
+			}
+			.link-area {
+				display: block;
+				margin-top: 25px;
+				text-align: center;
+			}
+			.spliter {
+				color: #bbb;
+				padding: 0px 8px;
+			}
+			
+			.oauth-area .oauth-btn:active {
+				border: solid 1px #aaa;
+			}
+			.oauth-area .oauth-btn.disabled {
+				background-color: #ddd;
+			}
+			.txang{
+				display: flex;
+				justify-content: center;
+				margin-top: 80px;
+			}
+			.dlu{
+				margin-top: 30px;
+			}
+			.tukuang{
+				display: flex;
+				flex-wrap:wrap ;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				height:130px;
+				width: 100%;
+				
+			}
+			
+			.mui-bar-nav{
+						background:#0062CC;
+					}
+					.mui-bar-tab{
+						background:#000000;
+					}
+
+             .mui-icon {
+             				color: #FFFFFF;
+             			}
+
+			
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">登录页面</h1>
+		</header>
+
+
+		<div class="txang">
+			<a>
+				<img src="./images/yonghu.png" width="80" height="80">
+			</a>
+		</div>
+
+		<div class="dlu">
+			<script src="js/mui.js"></script>
+			<script type="text/javascript">
+				mui.init()
+			</script>
+			<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label>用户名</label>
+					<input type="text" class="mui-input-clear" placeholder="请输入用户名">
+				</div>
+			</form>
+
+			<form class="mui-input-group">
+				<div class="mui-input-row mui-search mui-plus-visible">
+					<input id="search" type="search" class="mui-input-speech mui-input-clear" placeholder="带语音输入的搜索框">
+				</div>
+				<div class="mui-input-row">
+					<label>密码</label>
+					<input type="password" class="mui-input-password" placeholder="请输入密码">
+					<div class="mui-input-row mui-password">
+						<input type="password" class="mui-input-password">
+					</div>
+				</div>
+			</form>
+
+
+			<form class="mui-input-group">
+				<ul class="mui-table-view mui-table-view-chevron">
+					<li class="mui-table-view-cell">
+						下次自动登录
+						<div id="autoLogin" class="mui-switch">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</li>
+				</ul>
+			</form>
+			<div class="mui-content-padded">
+				<a class="" href="index.html">
+					<button id='login' class="mui-btn mui-btn-block mui-btn-primary">登录</button>
+				</a>
+			</div>
+			<div class="link-area">
+
+				<a id='reg' href="./register.html">注册账号</a>
+				<span class="spliter">|</span>
+				<a id='forgetPassword'>忘记密码</a>
+			</div>
+		</div>
+
+		</div>
+
+		<div class="tukuang">
+			<div class="tubiao">
+				<img src="./images/weibo.gif" width="40px" height="40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="./images/qq.gif" width="40px" height="40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="./images/weixin.gif" width="40px" height="40">
+			</div>
+
+		</div>
+
+		</form>
+		</div>
+
+			<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item " href="./index.html">
+						<div class="iconfont icon-shouye"></div>
+						<div class="mui-tab-label">首页</div>
+					</a>
+					<a class="mui-tab-item " href="./Venture project.html">
+						<div class="iconfont icon-xiangmutixi"></div>
+						<div class="mui-tab-label">项目</div>
+					</a>
+					<a class="mui-tab-item" href="./process.html">
+						<div class="iconfont icon-baoming"></div>
+						<div class="mui-tab-label">报名</div>
+					</a>
+					<a class="mui-tab-item" href="./demeanor.html">
+						<div class="iconfont icon-fengcaizhanshi"></div>
+						<div class="mui-tab-label">平台</div>
+					</a>
+					<a class="mui-tab-item mui-active">
+						<div class="iconfont icon-wode"></div>
+						<div class="mui-tab-label">我的</div>
+					</a>
+				</nav>
+
+
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui("body").on("tap", "a", function() {
+			document.location.href = this.href;
+		})
+	</script>
+
+</html>
