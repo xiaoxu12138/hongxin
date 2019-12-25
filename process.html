@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1579257_rxws8l85cwd.css"/>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578572_xtuq4n7i1c7.css"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+	<style type="text/css">
+		.body{
+			width: 100%;
+		}
+		.mui-slider-item{
+			width:375px ;
+		}	
+		.mui-bar-nav{
+								background:#0062CC;
+							}
+							.mui-bar-tab{
+								background:#000000;
+							}
+		.mui-icon {
+						color: #FFFFFF;
+					}
+	</style>
+</head>
+<body>
+	<header id="header" class="mui-bar mui-bar-nav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+				<h1 class="mui-title">报名流程</h1>
+			</header>
+
+<div class="mui-slider-item">
+					<a href="#">
+						<img src="./images/11.PNG" width="375px">
+					</a>
+				</div>
+		<div class="mui-slider-item">
+							<a href="#">
+								<img src="./images/12.PNG" width="375px">
+							</a>
+						</div>
+	<nav class="mui-bar mui-bar-tab">
+		<a class="mui-tab-item "href="./index.html">
+			<div class="iconfont icon-shouye"></div>
+			<div class="mui-tab-label">首页</div>
+		</a>
+		<a class="mui-tab-item" href="./Venture project.html">
+			<div class="iconfont icon-xiangmutixi"></div>
+			<div class="mui-tab-label">项目</div>
+		</a>
+		<a class="mui-tab-item mui-active" href="./process.html">
+			<div class="iconfont icon-baoming"></div>
+			<div class="mui-tab-label">报名</div>
+		</a>
+		<a class="mui-tab-item" href="./demeanor.html">
+			<div class="iconfont icon-fengcaizhanshi"></div>
+			<div class="mui-tab-label">平台</div>
+		</a>
+		<a class="mui-tab-item" href="./information.html">
+			<div class="iconfont icon-wode"></div>
+			<div class="mui-tab-label">我的</div>
+		</a>
+	</nav>
+</body>
+<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui("body").on("tap","a",function(){
+			document.location.href = this.href;
+		})
+	</script>
+</html>
