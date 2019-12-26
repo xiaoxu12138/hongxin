@@ -29,6 +29,9 @@
 			.box {
 				padding: 15px;
 			}
+			.mui-bar-tab{
+						background:#000000;
+					}
 		</style>
 	</head>
 	<body>
@@ -114,4 +117,9 @@
 			}.bind(this), 2000);
 		});
 	</script>
+	<script type="text/javascript">
+			mui("body").on("tap","a",function(){
+				document.location.href = this.href;
+			})
+		</script>
 </html>
